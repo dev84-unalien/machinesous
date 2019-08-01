@@ -81,4 +81,4 @@ export class P2Page implements OnInit {
             }
             rolling = false;
         }
-}
+ }}
