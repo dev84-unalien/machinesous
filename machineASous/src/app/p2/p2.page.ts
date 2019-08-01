@@ -13,76 +13,72 @@ export class P2Page implements OnInit {
   ngOnInit() {
 
             const path = '../../assets/photo/';
-            var temps, firstTime, tr1, tr2, tr3 = null;
-            var tourne, r1, r2, r3 = false;
-            var rnd, tours;
+    var genTime = null, tr1 = null, tr2 = null, tr3 = null;
+    var rolling = false, r1 = false, r2 = false, r3 = false;
+    var rndHead, r1Rnd, r2Rnd, r3Rnd, trials;
 
-            tours = 0;
+    trials = 5;
 
-            $('#active').click(function() {
-                if (!tourne) {
-                    $('#manche').addClass('mancheanim');
-                    if (tours < 5) {
-                        tours++;
-                        firstTime = setTimeout(initialise, 800);
-                    }
-                }
-            });
+    $('#activate').click(function() {
+        if (rolling == false) {
+            if (trials > 0) {
+                trials--;
+                $('#handle').addClass('handleanim');
+                genTime = setTimeout(initialize, 800);
+            }
+        }
+    });
 
-            function initialise() {
+    function initialize () {
 
-                $('#manche').removeClass('mancheanim');
-                tourne = true;
-                r1 = true;
-                r2 = true;
-                r3 = true;
-                clearTimeout(firstTime);
-                temps = setInterval(caroule, 100);
+        $('#handle').removeClass('handleanim');
+        rolling = true;
+        r1 = true;
+        r2 = true;
+        r3 = true;
+        tr1 = setTimeout(function() {r1 = false;}, 5000);
+        tr2 = setTimeout(function() {r2 = false;}, 7000);
+        tr3 = setTimeout(function() {r3 = false; verdict();}, 9000);
+        clearTimeout(genTime);
+        genTime = setInterval(playing, 100);
+    }
+
+    function playing() {
+
+            if (r1 == true) {
+                r1Rnd = Math.floor(Math.random() * 6) + 1;
+                rndHead = 'url(' + path + String(r1Rnd) + '.png)';
+                $('#roll1').css('background-image', rndHead);
             }
 
-            function caroule() {
-                if (!tr1 && !tr2 && !tr3) {
-                    tr1 = setTimeout(function() {
-                        r1 = false;
-                    }, 5000);
-                    tr2 = setTimeout(function() {
-                        r2 = false;
-                    }, 7000);
-                    tr3 = setTimeout(function() {
-                        r3 = false;
-                        clearInterval(temps);
-                        verdict();
-                    }, 9000);
-                }
-
-                if (r1 == true) {
-                  rnd = 'url(' + path + String(Math.floor(Math.random() * 6) + 1) + '.png)';
-                    $('#rouleau1').css('background-image', rnd);
-                }
-
-                if (r2 == true) {
-                  rnd = 'url(' + path + String(Math.floor(Math.random() * 6) + 1) + '.png)';
-                    $('#rouleau2').css('background-image', rnd);
-                }
-
-                if (r3 == true) {
-                  rnd = 'url(' + path + String(Math.floor(Math.random() * 6) + 1) + '.png)';
-                    $('#rouleau3').css('background-image', rnd);
-                }
+            if (r2 == true) {
+                r2Rnd = Math.floor(Math.random() * 6) + 1;
+                rndHead = 'url(' + path + String(r2Rnd) + '.png)';
+                $('#roll2').css('background-image', rndHead);
             }
-
-            function verdict() {
-                tourne = false;
-                clearTimeout(tr1);
-                clearTimeout(tr2);
-                clearTimeout(tr3);
-                tr1 = null;
-                tr2 = null;
-                tr3 = null;
+            
+            if (r3 == true) {
+                r3Rnd = Math.floor(Math.random() * 6) + 1;
+                rndHead = 'url(' + path + String(r3Rnd) + '.png)';
+                $('#roll3').css('background-image', rndHead);
             }
-  
+        }
 
-
-  }
-
+        function verdict () {
+            clearInterval(genTime);
+            clearTimeout(tr1);
+            clearTimeout(tr2);
+            clearTimeout(tr3);
+            if (r1Rnd == r2Rnd == r3Rnd) {
+                alert("Vous avez gagné en " + (5 - trials) + " essai(s)!");
+                trials = 5;
+            }
+            else if (trials > 0) {
+                alert("Perdu! Il vous reste encore " + trials + " essai(s)...");
+            }
+            else {
+                alert("Perdu! Vous avez utilisé vos cinq essais, vous ne pouvez plus jouer!");
+            }
+            rolling = false;
+        }
 }

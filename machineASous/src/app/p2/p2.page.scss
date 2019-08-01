@@ -10,7 +10,7 @@
         background-size: contain;
         position: relative;
     }
-    #active {
+    #activate {
         width: 6%;
         height: 9%;
         position: absolute;
@@ -18,7 +18,7 @@
         left: 73%;
         cursor: pointer;
     }
-    #rouleau1 {
+    #roll1 {
         width: 8.6%;
         height: 17%;
         position: absolute;
@@ -30,7 +30,7 @@
         background-position: center;
         background-size: 90%;
     }
-    #rouleau2 {
+    #roll2 {
         width: 8.5%;
         height: 18%;
         position: absolute;
@@ -42,7 +42,7 @@
         background-position: center;
         background-size: 90%;
     }
-    #rouleau3 {
+    #roll3 {
         width: 9%;
         height: 17.3%;
         position: absolute;
@@ -93,7 +93,7 @@ body {
     position: relative;
 }
 
-#manche {
+#handle {
     width: 20%;
     height: 65%;
     background-image: url('../../assets/photo/Manette_Machine_Haut.png');
@@ -105,7 +105,7 @@ body {
     left: 64%;
 }
 
-#active {
+#activate {
     width: 5%;
     height: 9%;
     position: absolute;
@@ -123,7 +123,7 @@ body {
     position: relative;
 }
 
-#active {
+#activate {
     width: 6%;
     height: 9%;
     position: absolute;
@@ -132,7 +132,7 @@ body {
     cursor: pointer;
 }
 
-#rouleau1 {
+#roll1 {
     width: 8.6%;
     height: 17%;
     position: absolute;
@@ -145,7 +145,7 @@ body {
     background-size: 90%;
 }
 
-#rouleau2 {
+#roll2 {
     width: 8.5%;
     height: 18%;
     position: absolute;
@@ -158,7 +158,7 @@ body {
     background-size: 90%;
 }
 
-#rouleau3 {
+#roll3 {
     width: 9%;
     height: 17.3%;
     position: absolute;
@@ -183,7 +183,7 @@ body {
     position: relative;
 }
 
-#rouleau1 {
+#roll1 {
     width: 8.6%;
     height: 17%;
     position: absolute;
@@ -196,7 +196,7 @@ body {
     background-size: 90%;
 }
 
-#rouleau2 {
+#roll2 {
     width: 6.5%;
     height: 17%;
     position: absolute;
@@ -209,7 +209,7 @@ body {
     background-size: 90%;
 }
 
-#rouleau3 {
+#roll3 {
     width: 8%;
     height: 17.3%;
     position: absolute;
@@ -222,14 +222,14 @@ body {
     background-size: 90%;
 }*/
 
-.mancheanim {
-    animation-name: mancheanim;
+.handleanim {
+    animation-name: handleanim;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
-@keyframes mancheanim {
+@keyframes handleanim {
     0% {
         background-image: url(../../assets/photo/Manette_Machine_Haut.png);
     }
