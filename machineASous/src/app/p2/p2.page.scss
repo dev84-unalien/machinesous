@@ -125,6 +125,19 @@
         #activate {
             left: 73%;
         }
+        #banque {
+            width: 15vw;
+            height: 7vh;
+            position: absolute;
+            top: 1.5%;
+            left: 6%;
+            text-align: center;
+            border-radius: 20%;
+            background-color: #f19710;
+        }
+        img {
+            left: 3%;
+        }
     }
 }
 
@@ -159,8 +172,9 @@
     }
 }
 
-div {
-    border: 1px solid black;
+@font-face {
+    font-family: "batton";
+    src: url(../../assets/font-face/digital_7/digital-7.ttf);
 }
 
 html,
@@ -179,6 +193,10 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
+    background-image: url(../../assets/photo/test3fond.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
 }
 
 #bandit {
@@ -253,25 +271,40 @@ body {
 }
 
 #tours {
-    width: 6vw;
-    height: 4vh;
+    width: 5vw;
+    height: 3vh;
     position: absolute;
     top: 0.5%;
-    left: 21%;
+    left: 26%;
     text-align: center;
     border-radius: 20%;
     background-color: blanchedalmond;
 }
 
 #banque {
-    width: 6vw;
-    height: 4vh;
+    width: 11vw;
+    height: 7vh;
     position: absolute;
-    top: 0.5%;
-    left: 51%;
+    top: 1.5%;
+    left: 18%;
     text-align: center;
     border-radius: 20%;
-    background-color: rgb(241, 151, 16);
+    background-color: #f19710;
+}
+
+img {
+    width: 6vw;
+    height: 9vh;
+    position: absolute;
+    top: 0.5%;
+    left: 14%;
+    text-align: center;
+}
+
+span {
+    font-size: 17px;
+    font-family: 'batton';
+    text-align: center;
 }
 
 
@@ -404,22 +437,6 @@ body {
     background-position: center;
     background-size: 90%;
 }*/
-
-input {
-    font-weight: bold;
-    font-style: oblique;
-    font-family: "Verdana";
-    color: #505050;
-    font-size: 40px;
-    background-color: #dddddd;
-    width: 6%;
-    height: 9%;
-    position: absolute;
-    top: 25.5%;
-    left: 73%;
-    text-align: center;
-    border-radius: 8px;
-}
 
 .nombre {
     font-style: oblique;
