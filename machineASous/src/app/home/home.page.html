@@ -1,16 +1,29 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-    Bandit manchot
+      Bandit manchot
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-   
-<div id="body">
- <div id="profil"></div>
- <div id="acmachine"></div>
- <div id="acboutique"></div>
-</div>
+  <div id="body">
+    <div id="cadrebas">
+      <div id="cadrehaut">
+        <div id="profil">
+          <div id="bulle"></div>
+          <div id="cadretrait">
+            <div id="trait"></div>
+          </div>
+        </div>
+      </div>
+      <div id="cadreba">
+        <button id="acmachine" (click)="goJouer()"></button>
+        <button class="jeu" (click)="goJouer()">Le jeu</button>
+      </div>
+      <button id="acboutique">
+        <div class="texte"(click)="goBoutique()">Boutique</div>
+      </button>
+    </div>
+  </div>
 </ion-content>
