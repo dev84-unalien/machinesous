@@ -5,7 +5,7 @@ ion-content {
 #body {
   width: 100vw;
   height: 89.7vh;
-  background-image: url("tapis.png");
+  background-image: url(..\..\assets\photo\tapis.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,7 +63,7 @@ ion-content {
   height: 20vh;
   border: 2px red solid;
   background-color: rgba(255, 0, 0, 0.5);
-  background-image: url("machine.png");
+  background-image: url(..\..\assets\photo\machine.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
