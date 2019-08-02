@@ -1,58 +1,88 @@
 /*iphone se 8 8 plus pixel*/
 
-@media only screen and (min-width: 567px) and (max-width: 738px) {
-    #bandit {
-        width: 73%;
-        height: 100%;
-        background-image: url('../../assets/photo/Bandit_Manchot_Sans_Bras.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        position: relative;
+@media only screen and (min-width: 567px) and (max-width: 736px) {
+    body {
+        #bandit {
+            width: 73%;
+            height: 100%;
+        }
+        #activate {
+            width: 6%;
+            height: 9%;
+            top: 25.5%;
+            left: 73%;
+        }
+        #roll1 {
+            width: 8.6%;
+            height: 17%;
+            top: 31%;
+            left: 32%;
+            background-size: 90%;
+        }
+        #roll2 {
+            width: 8.5%;
+            height: 18%;
+            top: 31%;
+            left: 43%;
+            background-size: 90%;
+        }
+        #roll3 {
+            width: 9%;
+            height: 17.3%;
+            top: 31%;
+            left: 54.35%;
+            background-size: 90%;
+        }
+        #handle {
+            width: 20%;
+            height: 65%;
+            top: 25.2%;
+            left: 64%;
+        }
     }
-    #activate {
-        width: 6%;
-        height: 9%;
-        position: absolute;
-        top: 25.5%;
-        left: 73%;
-        cursor: pointer;
-    }
-    #roll1 {
-        width: 8.6%;
-        height: 17%;
-        position: absolute;
-        top: 31%;
-        left: 32%;
-        background-color: white;
-        background-image: url(../../assets/photo/5.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 90%;
-    }
-    #roll2 {
-        width: 8.5%;
-        height: 18%;
-        position: absolute;
-        top: 31%;
-        left: 43%;
-        background-color: white;
-        background-image: url(../../assets/photo/1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 90%;
-    }
-    #roll3 {
-        width: 9%;
-        height: 17.3%;
-        position: absolute;
-        top: 31%;
-        left: 54.35%;
-        background-color: white;
-        background-image: url(../../assets/photo/3.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 90%;
+}
+
+
+/* iphone x et gala 9 +*/
+
+@media all and (min-width: 740px) and (max-width: 1366px) {
+    body {
+        #bandit {
+            width: 76%;
+            height: 100%;
+        }
+        #handle {
+            width: 12%;
+            height: 65%;
+            top: 25.2%;
+            left: 64%;
+        }
+        #activate {
+            width: 4%;
+            height: 8%;
+            top: 25.5%;
+            left: 69.4%;
+        }
+        #roll1 {
+            width: 6.6%;
+            height: 17%;
+            top: 31%;
+            left: 35.4%;
+            background-size: 90%;
+        }
+        #roll2 {
+            width: 6.5%;
+            height: 18%;
+            top: 31%;
+            left: 44.4%;
+            background-size: 90%;
+        }
+        #roll3 {
+            width: 7%;
+            height: 17.3%;
+            top: 31%;
+            left: 54.2%;
+        }
     }
 }
 
@@ -60,14 +90,72 @@
 /* ipad */
 
 @media all and (min-width: 1024px) and (max-width: 1366px) {
-    #bandit {
-        width: 100%;
-        height: 100%;
-        background-image: url(../../assets/photo/Bandit_Manchot_Sans_Bras.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        position: relative;
+    body {
+        #bandit {
+            width: 100%;
+            height: 100%;
+        }
+        #handle {
+            width: 20%;
+            height: 65%;
+            top: 25.2%;
+            left: 64%;
+        }
+        #roll1 {
+            width: 8.6%;
+            height: 17%;
+            top: 31%;
+            left: 32%;
+            background-size: 90%;
+        }
+        #roll2 {
+            width: 8.5%;
+            height: 18%;
+            top: 31%;
+            left: 43%;
+            background-size: 90%;
+        }
+        #roll3 {
+            width: 9%;
+            height: 17.3%;
+            top: 31%;
+            left: 54.35%;
+            background-size: 90%;
+        }
+        #activate {
+            left: 73%;
+        }
+    }
+}
+
+@media all and (min-width: 1600px) and (max-width: 3840px) {
+    body {
+        #bandit {
+            width: 100%;
+            height: 100%;
+        }
+        #roll1 {
+            width: 8.6%;
+            height: 17%;
+            top: 31%;
+            left: 32%;
+            background-size: 90%;
+        }
+        #roll2 {
+            width: 8.5%;
+            height: 18%;
+            position: absolute;
+            top: 31%;
+            left: 43%;
+            background-size: 90%;
+        }
+        #roll3 {
+            width: 9%;
+            height: 17.3%;
+            top: 31%;
+            left: 54.35%;
+            background-size: 90%;
+        }
     }
 }
 
@@ -93,6 +181,101 @@ body {
     position: relative;
 }
 
+#bandit {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/photo/Bandit_Manchot_Sans_Bras.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+#handle {
+    width: 20%;
+    height: 65%;
+    background-image: url('../../assets/photo/Manette_Machine_Haut.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 25.2%;
+    left: 64%;
+}
+
+#roll1 {
+    width: 8.6%;
+    height: 17%;
+    position: absolute;
+    top: 31%;
+    left: 32%;
+    background-color: white;
+    background-image: url(../../assets/photo/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+#roll2 {
+    width: 8.5%;
+    height: 18%;
+    position: absolute;
+    top: 31%;
+    left: 43%;
+    background-color: white;
+    background-image: url(../../assets/photo/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+#roll3 {
+    width: 9%;
+    height: 17.3%;
+    position: absolute;
+    top: 31%;
+    left: 54.35%;
+    background-color: white;
+    background-image: url(../../assets/photo/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+
+#activate {
+    width: 5%;
+    height: 9%;
+    position: absolute;
+    top: 25.5%;
+    left: 66%;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#tours {
+    width: 6vw;
+    height: 4vh;
+    position: absolute;
+    top: 0.5%;
+    left: 21%;
+    text-align: center;
+    border-radius: 20%;
+    background-color: blanchedalmond;
+}
+
+#banque {
+    width: 6vw;
+    height: 4vh;
+    position: absolute;
+    top: 0.5%;
+    left: 51%;
+    text-align: center;
+    border-radius: 20%;
+    background-color: rgb(241, 151, 16);
+}
+
+
+/*
 #handle {
     width: 20%;
     height: 65%;
@@ -222,6 +405,27 @@ body {
     background-size: 90%;
 }*/
 
+input {
+    font-weight: bold;
+    font-style: oblique;
+    font-family: "Verdana";
+    color: #505050;
+    font-size: 40px;
+    background-color: #dddddd;
+    width: 6%;
+    height: 9%;
+    position: absolute;
+    top: 25.5%;
+    left: 73%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.nombre {
+    font-style: oblique;
+    font-size: 40px;
+}
+
 .handleanim {
     animation-name: handleanim;
     animation-duration: 0.8s;
@@ -240,3 +444,26 @@ body {
         background-image: url(../../assets/photo/Manette_Machine_Haut.png);
     }
 }
+
+
+/*
+</style></head><body><?php $a='1000000';
+echo 'Nombre de '.strlen($a),
+' caractères.<br />';
+echo 'Nombre de '.round(strlen($a)/3,
+0).' blocs.<br />';
+$decal=((round(strlen($a)/3, 0)-strlen($a)/3)*3);
+echo 'Décalage de '.$decal.' caractères.<br />';
+$decal=(int)$decal;
+echo '<span class="nombre">';
+for($b=0;
+$b< strlen($a);
+$b++) {
+    if(is_int(($b+$decal)/3)&&$b!=0) {
+        echo ",";
+    }
+    echo '<input value="'.$a[$b].'"/>';
+}
+
+echo '</span>';
+?>*/
