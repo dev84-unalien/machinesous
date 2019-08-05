@@ -4,11 +4,51 @@ ion-content {
 }
 #body {
   width: 100vw;
-  height: 89.7vh;
+  height: 96vh;
   background-image: url(..\..\assets\photo\tapis.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media all and (min-width: 263px) and (max-width: 500px) {
+  #body {
+    width: 100vw;
+    height: 89.65vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+#body {
+  width: 100vw;
+  height: 96vh;
+  background-image: url(..\..\assets\photo\tapis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+}
+@media all and (min-width: 263px) and (max-width: 490px) {
+  #body {
+    width: 100vw;
+    height: 92vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media all and (min-width: 490px) and (max-width: 500px) {
+  #body {
+    width: 100vw;
+    height: 94vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 #cadrehaut {
   display: flex;
