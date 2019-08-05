@@ -1,0 +1,197 @@
+diff --cc machineASous/src/app/p2/p2.page.scss
+index cf457d0,3612acd..0000000
+--- a/machineASous/src/app/p2/p2.page.scss
++++ b/machineASous/src/app/p2/p2.page.scss
+@@@ -90,113 -88,95 +90,101 @@@
+  /* ipad */
+  
+  @media all and (min-width: 1024px) and (max-width: 1366px) {
+ -  body {
+ -    #bandit {
+ -      width: 100%;
+ -      height: 100%;
+ +    body {
+ +        #bandit {
+ +            width: 100%;
+ +            height: 100%;
+ +        }
+ +        #handle {
+ +            width: 20%;
+ +            height: 65%;
+ +            top: 25.2%;
+ +            left: 64%;
+ +        }
+ +        #roll1 {
+ +            width: 8.6%;
+ +            height: 17%;
+ +            top: 31%;
+ +            left: 32%;
+ +            background-size: 90%;
+ +        }
+ +        #roll2 {
+ +            width: 8.5%;
+ +            height: 18%;
+ +            top: 31%;
+ +            left: 43%;
+ +            background-size: 90%;
+ +        }
+ +        #roll3 {
+ +            width: 9%;
+ +            height: 17.3%;
+ +            top: 31%;
+ +            left: 54.35%;
+ +            background-size: 90%;
+ +        }
+ +        #activate {
+ +            left: 73%;
+ +        }
+-         #banque {
+-             width: 15vw;
+-             height: 7vh;
+-             position: absolute;
+-             top: 1.5%;
+-             left: 6%;
+-             text-align: center;
+-             border-radius: 20%;
+-             background-color: #f19710;
+-         }
+-         img {
+-             left: 3%;
+-         }
+++        span {}
+      }
+ -    #handle {
+ -      width: 20%;
+ -      height: 65%;
+ -      top: 25.2%;
+ -      left: 64%;
+ -    }
+ -    #roll1 {
+ -      width: 8.6%;
+ -      height: 17%;
+ -      top: 31%;
+ -      left: 32%;
+ -      background-size: 90%;
+ -    }
+ -    #roll2 {
+ -      width: 8.5%;
+ -      height: 18%;
+ -      top: 31%;
+ -      left: 43%;
+ -      background-size: 90%;
+ -    }
+ -    #roll3 {
+ -      width: 9%;
+ -      height: 17.3%;
+ -      top: 31%;
+ -      left: 54.35%;
+ -      background-size: 90%;
+ -    }
+ -    #activate {
+ -      left: 73%;
+ -    }
+ -  }
+  }
+  
+  @media all and (min-width: 1600px) and (max-width: 3840px) {
+ -  body {
+ -    #bandit {
+ -      width: 100%;
+ -      height: 100%;
+ -    }
+ -    #roll1 {
+ -      width: 8.6%;
+ -      height: 17%;
+ -      top: 31%;
+ -      left: 32%;
+ -      background-size: 90%;
+ +    body {
+ +        #bandit {
+ +            width: 100%;
+ +            height: 100%;
+ +        }
+ +        #roll1 {
+ +            width: 8.6%;
+ +            height: 17%;
+ +            top: 31%;
+ +            left: 32%;
+ +            background-size: 90%;
+ +        }
+ +        #roll2 {
+ +            width: 8.5%;
+ +            height: 18%;
+ +            position: absolute;
+ +            top: 31%;
+ +            left: 43%;
+ +            background-size: 90%;
+ +        }
+ +        #roll3 {
+ +            width: 9%;
+ +            height: 17.3%;
+ +            top: 31%;
+ +            left: 54.35%;
+ +            background-size: 90%;
+ +        }
+      }
+ -    #roll2 {
+ -      width: 8.5%;
+ -      height: 18%;
+ -      position: absolute;
+ -      top: 31%;
+ -      left: 43%;
+ -      background-size: 90%;
+ -    }
+ -    #roll3 {
+ -      width: 9%;
+ -      height: 17.3%;
+ -      top: 31%;
+ -      left: 54.35%;
+ -      background-size: 90%;
+ -    }
+ -  }
+ +}
+ +
+ +@font-face {
+ +    font-family: "batton";
+ +    src: url(../../assets/font-face/digital_7/digital-7.ttf);
+  }
+  
++ div {
+ -  border: 1px solid black;
+++    border: 1px solid black;
++ }
++ 
+  html,
+  body {
+ -  font-family: "Roboto", sans-serif;
+ -  font-size: 1.171303074670571vw;
+ +    font-family: 'Roboto', sans-serif;
+ +    font-size: 1.171303074670571vw;
+  }
+  
+  #mainbox {
+ -  display: flex;
+ -  flex-direction: row;
+ -  justify-content: center;
+ -  align-items: center;
+ -  box-sizing: border-box;
+ -  overflow: hidden;
+ -  width: 100vw;
+ -  height: 100vh;
+ -  position: relative;
+ +    display: flex;
+ +    flex-direction: row;
+ +    justify-content: center;
+ +    align-items: center;
+ +    box-sizing: border-box;
+ +    overflow: hidden;
+ +    width: 100vw;
+ +    height: 100vh;
+ +    position: relative;
+-     background-image: url(../../assets/photo/test3fond.jpg);
+-     background-repeat: no-repeat;
+-     background-position: center;
+-     background-size: 100vw;
+  }
+  
+  #bandit {

@@ -125,19 +125,7 @@
         #activate {
             left: 73%;
         }
-        #banque {
-            width: 15vw;
-            height: 7vh;
-            position: absolute;
-            top: 1.5%;
-            left: 6%;
-            text-align: center;
-            border-radius: 20%;
-            background-color: #f19710;
-        }
-        img {
-            left: 3%;
-        }
+        span {}
     }
 }
 
@@ -177,6 +165,10 @@
     src: url(../../assets/font-face/digital_7/digital-7.ttf);
 }
 
+div {
+    border: 1px solid black;
+}
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -193,10 +185,6 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-image: url(../../assets/photo/test3fond.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw;
 }
 
 #bandit {
