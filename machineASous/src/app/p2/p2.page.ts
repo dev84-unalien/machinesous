@@ -12,7 +12,7 @@ export class P2Page implements OnInit {
 
   ngOnInit() {
 
-            const path = '../../assets/photo/';
+    const path = '../../assets/photo/';
     var genTime = null, tr1 = null, tr2 = null, tr3 = null;
     var rolling = false, r1 = false, r2 = false, r3 = false;
     var rndHead, r1Rnd, r2Rnd, r3Rnd, trials;
@@ -81,4 +81,5 @@ export class P2Page implements OnInit {
             }
             rolling = false;
         }
+    }
 }
