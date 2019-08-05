@@ -14,21 +14,11 @@ export class P2Page implements OnInit {
   constructor() { }
 
   ngOnInit() {
-<<<<<<< HEAD
-
-    const path = '../../assets/photo/';
-    var genTime = null, tr1 = null, tr2 = null, tr3 = null;
-    var rolling = false, r1 = false, r2 = false, r3 = false;
-    var rndHead, r1Rnd, r2Rnd, r3Rnd, trials;
-
-    trials = 5;
-=======
     const context = this;
             const path = '../../assets/photo/';
             var genTime = null, tr1 = null, tr2 = null, tr3 = null;
     let rolling = false, r1 = false, r2 = false, r3 = false;
     var rndHead, r1Rnd, r2Rnd, r3Rnd;
->>>>>>> 9ca41a0e6189a36afde9749646cc7a174da08fd1
 
     $('#activate').click(function() {
         if (rolling == false) {
@@ -92,9 +82,5 @@ export class P2Page implements OnInit {
             }
             rolling = false;
         }
-<<<<<<< HEAD
     }
 }
-=======
- }}
->>>>>>> 9ca41a0e6189a36afde9749646cc7a174da08fd1
