@@ -15,7 +15,6 @@ export class P2Page implements OnInit {
   goHome() {
     this.nav.navigateForward("home");
   }
-
   ngOnInit() {
     const context = this;
     const path = "../../assets/photo/";
