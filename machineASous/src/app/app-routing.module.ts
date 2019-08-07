@@ -10,8 +10,10 @@ const routes: Routes = [
   },
   {path: 'p1', loadChildren: './p1/p1.module#P1PageModule'},
   {path: 'p2', loadChildren: './p2/p2.module#P2PageModule'},
-  {path: 'contact', loadChildren: './contact/contact.module#ContactPageModule'},  { path: 'connexion', loadChildren: './connexion/connexion.module#ConnexionPageModule' },
-
+  {
+    path: 'contact',
+    loadChildren: './contact/contact.module#ContactPageModule',
+  },
 ];
 
 @NgModule({

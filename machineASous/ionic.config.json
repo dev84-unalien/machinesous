@@ -1,5 +1,7 @@
 {
   "name": "machineASous",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

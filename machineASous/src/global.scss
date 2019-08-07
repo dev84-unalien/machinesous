@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+#return {
+  width: 7vw;
+  height: 7vw;
+  background-position: center;
+  background-size: 5vw;
+  border-radius: 10rem;
+  left: 5vh;
+  top: 15vh;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-image: url(assets\photo\previous.png);
+}

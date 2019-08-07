@@ -1,0 +1,51 @@
+#body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100vw;
+  height: 103vh;
+  background-image: url(..\..\assets\photo\tapis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10vh;
+  margin-top: -3vh;
+}
+.produit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: 15vh;
+  margin-left: 5vw;
+  font-size: 3vw;
+  color: white;
+  text-transform: capitalize;
+  padding: 0 15px;
+}
+#produit1 {
+  border: inset 3px rgb(173, 171, 3);
+  background-color: rgba(129, 131, 4, 0.8);
+}
+#produit2 {
+  border: inset 3px rgb(2, 65, 124);
+  background-color: rgba(102, 111, 241, 0.8);
+}
+#produit3 {
+  border: inset 3px rgb(66, 11, 64);
+  background-color: rgba(158, 12, 158, 0.8);
+}
+.prix {
+  width: 20vw;
+  border: dotted 1px rgba(247, 247, 247, 0.8);
+}
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 12vh;
+  background-color: rgb(216, 216, 216);
+  border-bottom: inset 3px rgb(66, 61, 61);
+  font-size: 8vw;
+}

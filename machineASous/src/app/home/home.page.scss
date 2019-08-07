@@ -1,1 +1,138 @@
+ion-content {
+  height: 20vh;
+  width: 100vw;
+}
+#body {
+  width: 100vw;
+  height: 96vh;
+  background-image: url(..\..\assets\photo\tapis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media all and (min-width: 263px) and (max-width: 500px) {
+  #body {
+    width: 100vw;
+    height: 89.65vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+#body {
+  width: 100vw;
+  height: 96vh;
+  background-image: url(..\..\assets\photo\tapis.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+}
+@media all and (min-width: 263px) and (max-width: 490px) {
+  #body {
+    width: 100vw;
+    height: 92vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media all and (min-width: 490px) and (max-width: 500px) {
+  #body {
+    width: 100vw;
+    height: 94vh;
+    background-image: url(..\..\assets\photo\tapis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+#cadrehaut {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 12vh;
+}
+#profil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30vw;
+  height: 5vh;
+  border: 2px grey solid;
+  border-radius: 30px;
+  background-color: lightgrey;
+  margin-right: 2vh;
+}
+#bulle {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 40px;
+  border: 2px solid blue;
+  background-color: rgb(3, 3, 128);
+  margin-left: 2vw;
+}
+#cadretrait {
+  width: 20vw;
+  height: 10vw;
+}
+#trait {
+  width: 18vw;
+  height: 6vw;
+  border-bottom: grey 2px solid;
+  margin-left: 2vw;
+}
+#cadrebas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 82vh;
+  padding-bottom:10vh;
+}
 
+#acmachine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 20vh;
+  border: 2px red solid;
+  background-color: rgba(255, 0, 0, 0.5);
+  background-image: url(..\..\assets\photo\machine.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0px 0px;
+}
+#acboutique {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 20vh;
+  border: 2px purple solid;
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 10px;
+}
+.texte {
+  color: rgb(255, 196, 0);
+  font-style: bolder;
+  font-size: 10vw;
+}
+.jeu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 196, 0);
+  font-style: bolder;
+  border: solid 2px red;
+  border-radius: 0% 0% 90% 90%;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 70vw;
+  border-top: none;
+}

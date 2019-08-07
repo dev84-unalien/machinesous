@@ -1,19 +1,33 @@
 <ion-content>
 
-
-
     <body>
 
         <div id="mainbox">
-            <div id="manche"></div>
-            <div id="rouleaux">
-                <div id="rouleau1"></div>
-                <div id="rouleau2"></div>
-                <div id="rouleau3"></div>
+              
+            <div id="tours">
+                <span>{{ trials }}</span>
             </div>
-            <div id="bandit"></div>
-            <div id="active"></div>
+            <div id="banque">
+                <p>{{ bankStr }}</p>
+            </div>
+            <img src="../../assets/photo/dollar.png" alt="">
+            <div id="bandit">
+                <div id="roll1"></div>
+                <div id="roll2"></div>
+                <div id="roll3"></div>
+                <div id="handle"></div>
+                <div id="activate"></div>
+                <button id="return" (click)="goHome()"></button>
+            </div>
+
+            <audio id="ambiencesnd" preload="auto" loop="true">
+                <source src="../../assets/sound/Casino_ambience_sound_03.ogg" type="audio/ogg">
+                <source src="../../assets/sound/Casino_ambience_sound_03.mp3" type="audio/mpeg">
+                Votre système est hélas muet...
+            </audio>
+
         </div>
+
     </body>
 
 </ion-content>
