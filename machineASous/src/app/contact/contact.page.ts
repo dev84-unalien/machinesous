@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ContactService} from '../services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,17 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.page.scss'],
 })
 export class ContactPage implements OnInit {
-
   // Optional parameters to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options.
   slideOpts = {
     initialSlide: 1,
-    speed: 400
+    speed: 400,
   };
 
+  constructor(public phone: ContactService) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  phoneNumber() {
+    this.phone.phoneNumber();
   }
 
+  liveTchat() {
+    this.phone.liveTchat();
+  }
+
+  ngOnInit() {}
 }

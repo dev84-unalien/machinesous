@@ -1,0 +1,45 @@
+<div id="form">
+  <div class="formInput">
+    <div><span>Prénom :</span></div>
+    <div>
+      <input
+        [(ngModel)]="prenom"
+        id="prenom"
+        type="text"
+        id="name"
+        placeholder="Taper votre Prénom"
+      />
+    </div>
+  </div>
+  <div class="formInput">
+    <div><span>Nom :</span></div>
+    <div>
+      <input
+        [(ngModel)]="nom"
+        type="text"
+        id="nickname"
+        placeholder="Taper votre Nom"
+      />
+    </div>
+  </div>
+  <div class="formInput">
+    <div><span>e-mail :</span></div>
+    <div>
+      <input
+        [(ngModel)]="email"
+        type="text"
+        id="mail"
+        placeholder="Taper votre Email"
+      />
+    </div>
+  </div>
+  <div class="formInput">
+  <div><span>Message :</span></div>
+<div><textarea [(ngModel)]="message" id="msg" name="user_message"></textarea></div>
+  </div>
+  <div class="button">
+    <button id="requete" (click)="envoyer()" type="submit">
+      Envoyer
+    </button>
+  </div>
+</div>
