@@ -1,9 +1,15 @@
 /*iphone se 8 8 plus pixel*/
 
 @media screen and (orientation: portrait) {
+<<<<<<< HEAD
+    body {
+        display: none;
+    }
+=======
   #mainbox {
     background: black;
   }
+>>>>>>> a30d7089bcc1967749bbc151ff3d841e92cd347c
 }
 
 @media only screen and (min-width: 567px) and (max-width: 736px) {
@@ -367,6 +373,22 @@ span {
   text-align: center;
   color: #f19710;
 }
+<<<<<<< HEAD
+
+#return {
+    width: 7vw;
+    height: 7vw;
+    background-position: center;
+    background-size: 5vw;
+    border-radius: 10rem;
+    margin-left: 2vh;
+    margin-top: 30vh;
+    background-image: url(..\..\assets\photo\previous.png);
+    background-repeat: no-repeat;
+}
+
+=======
+>>>>>>> a30d7089bcc1967749bbc151ff3d841e92cd347c
 
 /*
 #handle {
