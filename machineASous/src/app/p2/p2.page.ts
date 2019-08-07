@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from "jquery";
+import { NavController } from "@ionic/angular";
 
 @Component({
   selector: 'app-p2',
@@ -11,8 +12,12 @@ export class P2Page implements OnInit {
     trials = 5;
     bank = 0;
     bankStr = '00000';
-
-  constructor() { }
+    constructor(nav: NavController) {
+        this.firstfnct = nav;
+       }
+       goHome() {
+        this.firstfnct.navigateForward("home");
+      }    
 
   ngOnInit() {
     const context = this;
