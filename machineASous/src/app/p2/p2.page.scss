@@ -1,10 +1,70 @@
 /*iphone se 8 8 plus pixel*/
 
+@media screen and (orientation: portrait) {
+  #mainbox {
+    background: black;
+  }
+}
+
 @media only screen and (min-width: 567px) and (max-width: 736px) {
   body {
     #bandit {
       width: 73%;
       height: 100%;
+    }
+    #activate {
+      width: 6%;
+      height: 9%;
+      top: 25.5%;
+      left: 73%;
+    }
+    #roll1 {
+      width: 8.6%;
+      height: 17%;
+      top: 31%;
+      left: 32%;
+      background-size: 90%;
+    }
+    #roll2 {
+      width: 8.5%;
+      height: 18%;
+      top: 31%;
+      left: 43%;
+      background-size: 90%;
+    }
+    #roll3 {
+      width: 9%;
+      height: 17.3%;
+      top: 31%;
+      left: 54.35%;
+      background-size: 90%;
+    }
+    #handle {
+      width: 20%;
+      height: 65%;
+      top: 25.2%;
+      left: 64%;
+    }
+    p {
+      font-size: 23px;
+      font-family: "batton";
+      text-align: center;
+      margin-top: 5%;
+      margin-left: 21%;
+    }
+    #tours {
+      width: 2%;
+      height: 5%;
+      position: absolute;
+      top: 9.5%;
+      left: 46.8%;
+      text-align: center;
+    }
+    span {
+      font-size: 26px;
+      font-family: "batton";
+      text-align: center;
+      color: #f19710;
     }
     #activate {
       width: 6%;
@@ -262,14 +322,15 @@ body {
 }
 
 #tours {
-  width: 5vw;
-  height: 3vh;
+  width: 4%;
+  height: 5%;
   position: absolute;
-  top: 0.5%;
-  left: 26%;
+  top: 9.5%;
+  left: 45%;
   text-align: center;
   border-radius: 20%;
-  background-color: blanchedalmond;
+  background-color: black;
+  z-index: 1;
 }
 
 #banque {
@@ -292,10 +353,19 @@ img {
   text-align: center;
 }
 
-span {
-  font-size: 17px;
+p {
+  font-size: 35px;
   font-family: "batton";
   text-align: center;
+  margin-top: 12%;
+  margin-left: 21%;
+}
+
+span {
+  font-size: 47px;
+  font-family: "batton";
+  text-align: center;
+  color: #f19710;
 }
 
 /*
