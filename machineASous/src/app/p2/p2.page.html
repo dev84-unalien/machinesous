@@ -8,7 +8,7 @@
                 <span>{{ trials }}</span>
             </div>
             <div id="banque">
-                <p>65765</p>
+                <p>{{ bankStr }}</p>
             </div>
             <img src="../../assets/photo/dollar.png" alt="">
             <div id="bandit">
@@ -19,6 +19,12 @@
                 <div id="activate"></div>
                 <button id="return" (click)="goHome()"></button>
             </div>
+
+            <audio id="ambiencesnd" preload="auto" loop="true">
+                <source src="../../assets/sound/Casino_ambience_sound_03.ogg" type="audio/ogg">
+                <source src="../../assets/sound/Casino_ambience_sound_03.mp3" type="audio/mpeg">
+                Votre système est hélas muet...
+            </audio>
 
         </div>
 
