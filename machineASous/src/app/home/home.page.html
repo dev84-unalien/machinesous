@@ -7,6 +7,7 @@
 </ion-header>
 
 <ion-content>
+
   <div id="body">
     <div id="cadrebas">
       <div id="cadrehaut">
@@ -25,5 +26,13 @@
         <div class="texte"(click)="goBoutique()">Boutique</div>
       </button>
     </div>
+
+    <audio id="introsnd" preload="auto" loop="true">
+      <source src="../../assets/sound/Fancy_cakes_120_BPM.ogg" type="audio/ogg">
+      <source src="../../assets/sound/Fancy_cakes_120_BPM.mp3" type="audio/mpeg">
+      Votre système est hélas muet...
+    </audio>
+
   </div>
+  
 </ion-content>

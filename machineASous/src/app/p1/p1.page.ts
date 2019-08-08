@@ -13,8 +13,24 @@ export class P1Page implements OnInit {
     this.firstfnct = nav;
    }
 
-  ngOnInit() {
+   shopmusic: any;
+
+   ngOnInit() {
+     const shopSnd = $('audio#shopsnd')[0];
+     this.shopmusic = shopSnd;
+     this.shopmusic.load();
+     this.shopmusic.volume = 1;
+   }
+
+   ionViewWillEnter() {
+    this.shopmusic.currentTime = 0.0;
+    this.shopmusic.play();
   }
+
+  ionViewDidLeave() {
+    this.shopmusic.pause();
+  }
+
   goHome() {
     this.firstfnct.navigateForward("home");
   }

@@ -12,28 +12,63 @@ export class P2Page implements OnInit {
     trials = 5;
     bank = 0;
     bankStr = '00000';
+    firstfnct: NavController;
     constructor(nav: NavController) {
         this.firstfnct = nav;
        }
        goHome() {
         this.firstfnct.navigateForward("home");
-      }    
+      }
+
+      ambiencesound: any;
+      winsound: any;
+      gosound: any;
+      handlesound: any;
+      rollinsound: any;
 
   ngOnInit() {
     const context = this;
     const photopath = '../../assets/photo/';
     const ambSnd = $('audio#ambiencesnd')[0];
+    const winSnd = $('audio#wintheyessnd')[0];
+    const gameoverSnd = $('audio#gameoversnd')[0];
+    const handleSnd = $('audio#handlesnd')[0];
+    const rollinSnd = $('audio#rollinsnd')[0];
+    
+    this.ambiencesound = ambSnd;
+    this.ambiencesound.load();
+    this.ambiencesound.volume = 0.25;
+    this.ambiencesound.currentTime = 0.0;
+
+    this.winsound = winSnd;
+    this.winsound.load();
+    this.winsound.volume = 1;
+    this.winsound.currentTime = 0.0;
+
+    this.gosound = gameoverSnd;
+    this.gosound.load();
+    this.gosound.volume = 1;
+    this.gosound.currentTime = 0.0;
+
+    this.handlesound = handleSnd;
+    this.handlesound.load();
+    this.handlesound.volume = 1;
+    this.handlesound.currentTime = 0.0;
+
+    this.rollinsound = rollinSnd;
+    this.rollinsound.load();
+    this.rollinsound.volume = 1;
+    this.rollinsound.currentTime = 0.0;
+
     let genTime = null, tr1 = null, tr2 = null, tr3 = null;
     let rolling = false, r1 = false, r2 = false, r3 = false;
     let rndHead, r1Rnd, r2Rnd, r3Rnd;
-
-    ambSnd.volume = 1;
-    ambSnd.play();
 
     $('#activate').click(function() {
         if (rolling == false) {
             if (context.trials > 0) {
                 context.trials--;
+                context.handlesound.play();
                 $('#handle').addClass('handleanim');
                 genTime = setTimeout(initialize, 800);
             }
@@ -52,6 +87,7 @@ export class P2Page implements OnInit {
         tr3 = setTimeout(function() {r3 = false; verdict();}, 9000);
         clearTimeout(genTime);
         genTime = setInterval(playing, 100);
+        context.rollinsound.play();
     }
 
     function playing() {
@@ -82,21 +118,28 @@ export class P2Page implements OnInit {
         clearTimeout(tr2);
         clearTimeout(tr3);
 
-        r1Rnd = 1; r2Rnd = 1; r3Rnd = 1;
+        context.rollinsound.pause();
+
+        // r1Rnd = 1; r2Rnd = 1; r3Rnd = 1;
 
         if ((r1Rnd == r2Rnd) && (r1Rnd == r3Rnd)) {
-            alert("Vous avez gagné en " + (5 - context.trials) + " essai(s)!");
-            context.bank += 250;
+            context.winsound.play();
+            context.bank += 20;
             context.bankStr = context.bank.toString().padStart(5, '0');
-            context.trials = 5;
+            // context.trials = 5;
         }
-        else if (context.trials > 0) {
-            alert("Perdu! Il vous reste encore " + context.trials + " essai(s)...");
-        }
-        else {
-            alert("Perdu! Vous avez utilisé vos cinq essais, vous ne pouvez plus jouer!");
+        else if (context.trials == 0) {
+            context.gosound.play();
         }
             rolling = false;
         }
     }
+
+    ionViewWillEnter() {
+        this.ambiencesound.play();
+      }
+    
+      ionViewDidLeave() {
+        this.ambiencesound.pause();
+      }
 }
